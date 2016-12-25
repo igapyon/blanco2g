@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src.fw"/>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="src.runtime"/>
-	<classpathentry kind="src" path="src.basic"/>
 	<classpathentry kind="src" path="blanco/main"/>
-	<classpathentry kind="src" path="test/src"/>
 	<classpathentry kind="src" path="blanco.test/main"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/java.basic"/>
+	<classpathentry kind="src" path="src/main/java.fw"/>
+	<classpathentry kind="src" path="src/main/java.runtime"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/buildpurpose/ant.jar"/>
 	<classpathentry kind="lib" path="lib/blanco1g/blancocg-1.5.5.jar"/>

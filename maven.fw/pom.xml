@@ -61,7 +61,7 @@
 						</goals>
 						<configuration>
 							<sources>
-								<source>../src.fw/</source>
+								<source>../src/main/java.fw/</source>
 							</sources>
 						</configuration>
 					</execution>
