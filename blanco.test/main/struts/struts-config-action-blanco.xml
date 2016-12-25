@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <action-mappings>
+    <!-- Struts テスト用のロジック・クラス。 -->
+    <action type="test.blanco.struts.StrutsTester01Action" name="StrutsTester01Form" path="/hello">
+      <!-- 正常終了した場合のフォワード先。 -->
+      <forward name="success" path="/pages/hello.jsp"/>
+    </action>
+
+    <!-- Struts のテスト。 -->
+    <action type="test.blanco.struts.StrutsTester02Action" name="StrutsTester01Form" path="/aaa">
+      <!-- 正常終了の遷移先。 -->
+      <forward name="success" path="/pages/hello.jsp"/>
+      <!-- 異常終了の遷移先。 -->
+      <forward name="error" path="/pages/error.jsp"/>
+    </action>
+
+    <!-- Struts のテスト。 -->
+    <action type="test.blanco.struts.StrutsTester03Action" name="StrutsTester01Form" path="/aaa" scope="request">
+      <!-- 正常終了の遷移先。 -->
+      <forward name="success" path="/pages/hello.jsp"/>
+      <!-- 異常終了の遷移先。 -->
+      <forward name="error" path="/pages/error.jsp" redirect="true"/>
+    </action>
+
+  </action-mappings>
+</struts-config>

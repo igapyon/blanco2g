@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+  <form-beans>
+    <!-- テスト用のアクションフォーム。 -->
+    <form-bean type="test.blanco.struts.StrutsTester01Form" name="StrutsTester01Form" />
+
+    <!-- テスト用のアクションフォーム。 -->
+    <form-bean type="test.blanco.struts.StrutsTester11Form" name="StrutsTester11Form" />
+
+    <!-- テスト用のアクションフォーム。 -->
+    <form-bean type="test.blanco.struts.StrutsTester12Form" name="StrutsTester12Form" />
+
+    <!-- テスト用のアクションフォーム。 -->
+    <form-bean type="test.blanco.struts.StrutsTester13Form" name="StrutsTester13Form" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester11" name="ValidateLengthTester11" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester12" name="ValidateLengthTester12" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester13" name="ValidateLengthTester13" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester21" name="ValidateLengthTester21" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester22" name="ValidateLengthTester22" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester23" name="ValidateLengthTester23" />
+
+    <!-- 項目長さのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateLengthTester24" name="ValidateLengthTester24" />
+
+    <!-- いろいろ混ぜたテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateMixTester01" name="ValidateMixTester01" />
+
+    <!-- いろいろ混ぜたテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateMixTester11" name="ValidateMixTester11" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester21" name="ValidateRequiredTester21" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester22" name="ValidateRequiredTester22" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester31" name="ValidateRequiredTester31" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester41" name="ValidateRequiredTester41" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester42" name="ValidateRequiredTester42" />
+
+    <!-- 必須項目フィールドのテスト。 -->
+    <form-bean type="test.blanco.validate.ValidateRequiredTester43" name="ValidateRequiredTester43" />
+
+  </form-beans>
+</struts-config>

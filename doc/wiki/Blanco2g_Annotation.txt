@@ -1,0 +1,20 @@
+= Blanco2g アノテーション
+== Blanco2g アノテーション一覧
+|| '''アノテーション''' || '''適用箇所''' || '''説明''' ||
+|| [Blanco2g_Annotation_BlancoCache @BlancoCache] || メソッド || メソッドに対してキャッシュ機能を追加します。 ||
+|| [Blanco2g_Annotation_BlancoConstantsVersion @BlancoConstantsVersion] || クラス || クラスにビルドした日時をあらわす定数フィールドを追加します。 ||
+|| [Blanco2g_Annotation_BlancoGetterSetter @BlancoGetterSetter] || フィールド || フィールドにゲッター・メソッドとセッター・メソッドを追加します。 ||
+|| [Blanco2g_Annotation_BlancoInject @BlancoInject] || メソッド・パラメータ || メソッド・パラメータを注入 ||
+|| [Blanco2g_Annotation_BlancoJsfManagedBean @BlancoJsfManagedBean] || クラス || クラスに @!ManagedBean アノテーションなどを追加します。 ||
+|| [Blanco2g_Annotation_BlancoNoop @BlancoNoop] || メソッドなど || Blanco2g に「なし」の情報を伝え、ソースコード自動生成を必ず実施するようにします。 ||
+|| [Blanco2g_Annotation_BlancoNotNull @BlancoNotNull] || メソッド・パラメータ || メソッド・パラメータの非 NULL チェックを付与 ||
+|| [Blanco2g_Annotation_BlancoTrace @BlancoTrace] || メソッド || メソッド呼び出しにトレースを付与 ||
+
+TODO アノテーション付与可能先を記述
+
+== リンク
+ * [Blanco2g Blanco2g トップページ]
+
+== Wiki URL
+ * http://sourceforge.jp/projects/blancofw/wiki/Blanco2g_Annotation
+ * http://sourceforge.jp/projects/blancofw/wiki/Blanco2g_Annotation?action=edit

@@ -1,0 +1,163 @@
+0.6.0-I201301091311
+  update to blancomessage-0.6.3.jar jar.
+  (blanco2gDistribution) update blancoDb jars.
+
+0.5.9-I201207261651
+  @BlancoGetterSetter に アノテーション要素「addMethodCallToSetter」を追加しました。
+
+0.5.8-I201206201634
+  キャッシュ機構について改良。キャッシュ生存期間の設定を追加。
+
+0.5.7-I201205282033
+  パッケージング用にビルド実施。
+
+0.5.7-I201205251301
+  @BlancoValidateLength に固定長対応を追加しました。
+
+0.5.7-I201205111942
+  ランタイムライブラリに 日本語全角空白に対応した trim メソッドを追加しました。
+
+0.5.6-I201204161454
+  位置情報をメッセージに加えるアノテーションを追加。
+
+0.5.5-I201203072123
+  長さチェックなどについて、長さが 0 のものについてはチェック対象外とします。これは必須チェック側で実施してください。
+
+0.5.4-I201202221433
+  Apache Struts メッセージのレベルを変更する機能を追加。
+
+0.5.3-I201202221157
+  フィールド・バリデーションの処理について、「必須」、「型」、「桁」の順に処理するように優先度を調整あるいは採番のはばを調整。
+    必須チェック: 71000 番台
+    型チェック: 72000 番台
+    桁チェック: 73000 番台
+    形式チェック: 74000 番台
+    範囲チェック: 75000 番台
+
+0.5.2-I201202221128
+  Java 1.5 でもビルド可能なように改良する。
+
+0.5.1-I201202111034
+  @BlancoValidateRange が java.math.BigDecimal 以外に java.lang.String も処理できるようにする。
+  @BlancoValidateRequired: adding JSF support.
+  バリデーションメッセージについて、メッセージの項目名のクオート方法を変更。項目名を '' から「」へと囲う文字を変更。
+
+0.5.0-R201201180824
+  安定版リリース
+  バリデーションの範囲処理を調整。
+
+0.3.5-I201201151840
+  Struts バリデーションのメソッド生成契機もアノテーション化
+  forward の redirect の表現を追加
+
+0.3.4-I201201040045
+  フィールドバリデーションの追加。
+  Struts の scope に対応。
+
+0.3.3-I201112152150
+  アノテーションのトリプル・ライセンス適用
+  BlancoStrutsReset: あたらしいアノテーションの導入。
+
+0.3.2-I201112140018
+  アノテーションは blancofw.jar に移動
+  ActionForm に reset 生成を追加。
+  メソッド・キャッシュのバグを訂正。
+
+  TODO ソースコード入力に文字エンコーデイングを指定可能なように改良。
+  TODO か、または BlancoNotNull の延長上で、個別でアノテーションが妥当か? BlancoValidatePattern か? BlancoValidateLength(min, max, fixed)
+  TODO BlancoCache のキーについて、プリミティブ＋文字列に範囲を限定させる。
+  TODO メソッド引数に対する 正規表現マッチングによるパターンの強制の検討。
+  TODO FIXME をソースコードに書き出した際に、sysout にも同様の内容を出力すべき。その際には「クラス名#メソッド名」の表現に改良する必要あり。
+
+  TODO データベース接続を取得するための参照実装が欲しい。
+  TODO ドメインによる集中的な型情報の仕組みの検討。
+  TODO BlancoThreadYield がほしい。
+  TODO BlancoCache: 同一メソッド名＋パラメータ違いのキャッシュが適切でないのを訂正。
+  TODO ソフトウェアの英語対応。ソースコードに英和両方を出力がよいのか?
+  TODO Struts: Forward アノテーションの存在位置のチェック機能が必要。Action の中でないと存在してはならない。
+  TODO Struts: フォーム名の重複チェックのロジックが必要。
+  TODO Struts のキー類について重複チェック処理を追加。
+  TODO Blanco2g の BlancoInject について、処理するクラスが無かった未処理状態について、ソースコード上に FIXME を書き出す
+  TODO BlancoDb が生成したクラスを Connection にバインドする際に、バインド先が無かった場合の未処理状態について、ソースコード上に FIXME を書き出す
+
+  TODO GC 用のアノテーションがほしい。
+  TODO Wiki の英語対応
+  TODO Blanco2gDistribution に GettingStarted.txt を追加 -> 既存 Wiki を活用のこと。
+
+  TODO @BlancoInject 処理を もっと共通化できないか検討。
+  TODO @BlancoCache キャッシュクリアの方法が欲しい。
+  TODO @BlancoDriver (textOnSameLocation) がほしい。ドライバ一覧をテキストファイルからロードするようにする。
+  TODO @BlancoGlobalSetting (propertiesOnSameLocation) がほしい。
+  TODO @BlancoSetting (key, value) がほしい。
+  TODO @BlancoGlobalTrace (methodPattern, sysout, logger) がほしい。
+  TODO @BlancoGlobalTraceMemory (methodPattern) がほしい。
+  TODO iBatis 対応を追加したい。が私は iBatis に慣れていない。
+
+0.3.1-I201112092344
+  Struts: Logic の execute メソッドの第２引数から Form クラス名を引き当てるようにする。アノテーションにはフォーム名は不要。
+  Struts の Wiki 記述を追加。
+  Struts 関連生成物に BlancoGeneratedBy を追加。
+  Struts の XML ファイルや Action クラスについて、JavaDoc を転記するよう変更。
+  BlancoConstantsVersion に 定数への getter メソッド生成を追加。
+  Blanco2g 実行時に jar 類のバージョン表示機能を追加。
+
+0.3.0-M201112082239
+  Struts の XML ファイルについて、対象が１件もない場合には出力を抑制すべき。
+  Struts の XML ファイルについて、FQCN でソートすべき。
+  バージョン番号の報告を改良。
+
+0.2.1-I201112070001
+  BlancoStrutsLogic を追加。
+  BlancoStrutsForm の追加
+  BlancoStrutsForward の追加。
+  Struts の XML ファイルの生成。
+  ファイルヘッダーの不備を訂正。
+  現在の処理中情報「Blanco2gProcessingInfo」のクラス・メソッド類について、Input, Output それぞれスタックベースに変更する。
+
+0.2.0-I201112042132
+  デバッグ用の仕組みを構築。
+
+0.1.2-I201112041714
+  「@BlancoTraceMemory」を追加する。(xxx/xxx) 形式でメモリ使用量を報告。報告先はデフォルトで sysout。gc = true というプロパティも追加する。
+  ドライバ一覧の標準出力について、優先順位を最初に出力する
+  BlancoCache を static メソッドに対応させる
+  Blanco2g が生成するクラスについて、BlancoGeneratedBy に 「Blanco2g」をセットするようにする。
+  「@BlancoDriver」というアノテーションを導入する。method = "add" (固定), class = "ドライバ・クラス FQCN" ではどうか?
+  @BlancoGlobalSetting (key, value) がほしい。
+
+0.1.1-I201112031109
+  Blanco2gDriver 実装については、パッケージ名に「driver」という階層を挟むよう変更する。
+  Blanco2g に Blanco2gDriverManager を導入する。クラス名により重複登録を回避する。
+  Priority 順へのソートの実装。順序そのものの調整作業。
+
+0.1.1-I201112010100
+  主だったバグの訂正。
+
+2011.11.29 (0.1-I201111292250)
+  テストコードの整理。処理の改善。
+
+2011.11.20 (0.0.6-201111202118)
+  テストコードの整理。
+
+2011.11.13 (0.0.5)
+  BlancoNoop (何もしない。ただし Java ソースコードは生成します。) Class, Method, Field のどこかで利用。
+  ソースコードには API, カーネル, 基本の 3 種類が少なくとも存在するはず。このうち、ほんとうの基本部分のみ jar を分離。
+  TODO static メソッドへの対応。
+
+2011.11.09 (0.0.4)
+  BlancoGetterSetter フィールドへのゲッター・セッターを付与。
+  BlancoTrace (メソッドへのトレース付与)
+  BlancoNotNull (メソッドパラメータへの非 null 制約付与)
+  TODO 処理単位のストレージがほしい。全体・ソース・クラス・メソッド、、、など。プッシュとポップが必要。
+  TODO OSGi 対応が欲しい。
+
+2011.11.07 (0.0.3)
+  再ビルドの実施。
+  TODO blancoDb の Blanco2g 対応。XXX.sql + AbstractXXX.java -> XXX.java か???
+       INSERT, UPDATE, DELETE の DAO がほしい... 
+
+2011.11.06 (0.0.2)
+  初期バージョンとして最低限の体裁ができたものと考えます。
+
+2011.11.05 (0.0.1)
+  新規プロダクトとして Blanco2g の開発に着手。
